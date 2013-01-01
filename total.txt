@@ -1,0 +1,2276 @@
+insert into questions values('q1',
+'
+What will be the output of following program ?
+    main()
+    {
+    int x,y = 10;
+    x = y * (int) NULL;
+    printf("%d",x);
+    }
+',
+       
+' a. Error',
+' b. 10',
+' c. 0',
+' d. Junk',
+'3');
+
+
+insert into questions values('q2',
+'
+What will be the output of following snippet ?
+
+    int main()
+    {
+        int i,sum=0;
+        int arr[]={1,2,3,4,5};
+        for(i=0;i<5;i++);
+         sum = sum + arr[i];
+        printf("%d",sum);
+    }
+',
+' a. 5',
+' b. 15',
+' c. Compilation Error',
+' d. Junk',
+'4');
+
+insert into questions values('q3',
+'
+What will be output if you will compile and execute the
+following c code?
+#include<stdio.h>
+int main(){
+char c=125;
+c=c+10;
+printf("%d",c);
+return 0;
+}
+',
+' a. 135',
+' b. -121',
+' c. -8',
+' d. Compiler error',
+'2');
+
+insert into questions values('q4',
+'
+What will be output if you will compile and execute the
+following c code?
+#include <stdio.h>
+#include <string.h>
+int main(){
+char *str=NULL;
+strcpy(str,"cquestionbank");
+printf("%s",str);
+return 0;
+}
+',
+' a. cquestionbank',
+' b. cquestionbank\0',
+' c. Segmentation Fault',
+' d. It will print nothing',
+'3');
+
+insert into questions values('q5',
+'
+What will be the output of the following program?
+
+#include <stdio.h>
+#include <assert.h>
+int main(){
+char x=125;
+x+=10;
+assert(x<-120);
+printf("%d",x);
+}
+',
+' a. -121',
+' b. Compilation Error',
+' c. Assertion Error',
+' d. Runtime Error',
+'1');
+
+insert into questions values('q6',
+'
+#include<stdio.h>
+    int main()
+    {
+        signed int bit=512, mBit;
+        {
+            mBit = ~bit;
+            bit = bit & ~bit ;
+            printf("%d %d", bit, mBit);
+        }
+        return 0;
+    }
+',
+' a. 0, 512',
+' b. 0, 513',
+' c. 512, 513',
+' d. 0, -513',
+'4');
+
+insert into questions values('q7',
+'
+What is the output?
+#include<stdio.h>
+    int main()
+    {    signed x;
+        unsigned y;
+        x = 10 +- 10u + 10u +- 10;
+        y = x;
+        if(x==y)
+            printf("%d %d",x,y);
+        else if(x!=y)
+             printf("%u %u",x,y);
+        return 0;
+    }
+',
+' a. 0 0',
+' b. 0 65536',
+' c. 65536 0',
+' d. Compilation error',
+'1');
+
+insert into questions values('q8',
+'
+What does the following code print?
+printf("%d", ( printf("%d", printf("tirtocan") )));
+',
+' a. 22tirtocan',
+' b. tirtocan82',
+' c. tirtocan81',
+' d. can not say',
+'3');
+
+insert into questions values('q9',
+'
+What will be the output?
+#include<stdio.h>
+
+int main()
+{
+    int i;
+    const double PI;
+    PI=3.14;
+    int n=PI;
+    printf("%d",n);
+    return 0;
+}
+
+what will be the output of the above code?
+',
+' a. 3',
+' b. 3.14',
+' c. will not compile',
+' d. nothing',
+'3');
+
+insert into questions values('q10',
+'
+What will be the output?
+public class Thread{
+    public static void main(String[] agrgs){
+        int a=10;
+        if(a==10){
+        int b=9;
+        System.out.println("a and b are"+a+" and "+b);
+        }
+        else{
+        a=b;
+        b/=2;
+        System.out.println("a is"+a+"b is"+b);
+        }
+    }
+}   
+what will be the output?
+',
+' a. a is 10 and b is 9',
+' b. class Thread is redefined error',
+' c. a is 9 and b is 4',
+' d. Will not compile',
+'4');
+
+insert into questions values('q11', 
+'
+What would be the equivalent pointer expression for referring
+    the array element a[i][j][k][l]
+',
+' a. *((((a+i)+j)+k)+l)',
+' b. *(*(*(*(a+i)+j)+k)+l)',
+' c. *(((a+i)+j)+k+l)',
+' d. *(*(*(a+i)+j)+k)+l)',
+'2');
+
+insert into questions values('q12',
+'
+What will the output be ?
+#define THIS printf(
+#define IS "CODE"
+#define CODE )
+int main()
+{
+printf(“%d”,THIS IS CODE);
+}
+',
+' a. COMPILE TIME ERROR',
+' b. RUNTIME ERROR',
+' c. NO ERROR NO OUTPUT',
+' d. CODE4',
+'4');
+
+insert into questions values('q13',
+'
+What will the output of the following code be?
+#include<iostream>
+using namespace std;
+int& preinc(int& x)
+{
+return ++x;
+}
+int main()
+{
+int y=6;
+cout<<preinc(y)==7;
+}
+',
+' a. Syntax error in line int& preinc(int& x)',
+' b. Precedence error',
+' c. output is 1',
+' d. output is 7',
+'2');
+
+insert into questions values('q14',
+'
+ What will the output of the following be?
+#include<iostream>
+using namespace std;
+int& preinc(int& x)
+{
+return x++;
+}
+int main()
+{
+int y=6;
+cout<<preinc(y)==7;
+}
+',
+' a. Syntax error in line int& preinc(int& x) 
+        and also in return line',
+' b. rvalue error in return line',
+' c. output is 1',
+' d. output is 7',
+'2');
+
+insert into questions values('q15',
+'
+Which collection class associates values with keys, 
+and orders the keys according to their natural order?
+',
+' a. java.util.HashSet',
+' b. java.util.LinkedList',
+' c. java.util.TreeMap',
+' d. java.util.SortedSet',
+'3');
+
+insert into questions values('q16',
+'
+public class Test { }
+What is the prototype of the default constructor?
+',
+' a. Test( )',
+' b. Test(void)',
+' c. public Test( )',
+' d. public Test(void)',
+'3');
+
+insert into questions values('q17',
+'
+Predict the output of the following:
+#include<stdio.h>
+int main()
+{
+int a=5;
+int b=a++ + a++;
+a=5;
+int c=a++ + ++a;
+printf("%d \n %d",b,c);
+return 0;
+}
+',
+' a. 11,12',
+' b. 10,12',
+' c. 12,12',
+' d. 10,11',
+'2');
+
+insert into questions values('q18',
+'
+1. class tester{
+2. public static void main(String[] args){
+3. byte a = 10;
+4. a = a+10;
+5. a += 10;
+7. }
+8. }
+Which line throws an error?
+',
+' a. Line 3',
+' b. Line 4',
+' c. Line 5',
+' d. Line 5 and Line 4',
+'2');
+
+insert into questions values('q19',
+'
+class tester
+{
+public static void main(String[] args)
+{
+int IntegerValue = 1;
+boolean BooleanValue = false;
+BooleanValue = (boolean) IntegerValue;
+}
+}
+Which of the following occurs dues to Line 6 is 
+correct according to the above code?
+',
+' a. BooleanValue changes to 1',
+' b. BooleanValue changes to true',
+' c. Error: incompatible types',
+' d. Error: inconvertible types',
+'4');
+
+
+insert into questions values('q20',
+'
+What would be the output of the following code if there is any at all?
+import java.util.*;
+import java.text.*;
+public class tester {
+public static void main(String[] args) throws ParseException {
+Scanner in = new Scanner(System.in);
+System.out.println("Enter the date in [dd/mm/yyyy] format:");
+String d = in.nextLine();
+SimpleDateFormat src = new SimpleDateFormat("dd MM yyyy");
+Date curdate = src.parse(d);
+System.out.println("The input date is "+curdate);
+}
+}
+// The input is given as 09 11 1992
+',
+' a. The input date is Mon Nov 09 00:00:00 IST 1992',
+' b. Code does not compile',
+' c. Code compiles but Run Time Exception',
+' d. Compile time exception occurs',
+'3');
+
+insert into questions values('q21',
+'
+Predict the output:
+class tester {
+public void trimIt(String s) {
+s.trim();
+}
+public static void main(String[] s) {
+tester t = new tester();
+String String = " Trim Me ";
+t.trimIt(String);
+System.out.println("**"+String+"**");
+}
+}
+',
+' a. Output: ** Trim Me **',
+' b. Output: **TrimMe**',
+' c. Output: **Trim Me**',
+' d. Output: **Trim Me **',
+'1');
+
+insert into questions values('q22',
+'
+Predict the output:
+class tester {
+public static void main(String[] s) {
+System.out.print("Start ");
+for(int i=0; i < 2; i = i++ ) {
+System.out.print("Processing... ");
+}
+System.out.print("End ");
+}
+}
+',
+' a. Start Processing... Processing... End',
+' b. Compile Error',
+' c. Runs infinitely',
+' d. None of the above',
+'3');
+
+insert into questions values('q23',
+'
+What is the output?
+1. main()
+2. {
+    printf("%x",-1<<4);
+3. }
+',
+' a. fff0',
+' b. 0fff',
+' c. ffff',
+' d. 0000',
+'1');
+
+insert into questions values('q24',
+'
+What is the output?
+main()
+{
+char *p="hai friends",*p1;
+p1=p;
+while(*p!=\'\0\') ++*p++;
+printf("%s %s",p,p1);
+}
+',
+' a. ibj gsjfoet',
+' b. hbi grjeodt',
+' c. ibj!gsjfoet',
+' d. Segmentation fault',
+'4');
+
+insert into questions values('q25',
+'
+main()
+{
+int i;
+printf("%d",scanf("%d",&i)); // value 10 is given as input here
+}
+',
+' a. 10',
+' b. 1',
+' c. Compiler error',
+' d. Garbage',
+'2');
+
+insert into questions values('q26',
+'
+import java.util.*;
+class I
+{
+public static void main (String[] args)
+{
+Object i = new ArrayList().iterator();
+System.out.print((i instanceof List)+",");
+System.out.print((i instanceof Iterator)+",");
+System.out.print(i instanceof ListIterator);
+}
+}
+',
+' a. false, false, false',
+' b. false, false, true',
+' c. false, true, false',
+' d. false, true, true',
+'3');
+
+insert into questions values('q27',
+'
+What is the output?
+TreeSet map = new TreeSet();
+map.add("one");
+map.add("two");
+map.add("three");
+map.add("four");
+map.add("one");
+Iterator it = map.iterator();
+while (it.hasNext() )
+{
+System.out.print( it.next() + " " );
+}
+',
+' a. one two three four',
+' b. four one three two',
+' c. three two one four',
+' d. one two three four one',
+'2');
+
+insert into questions values('q28',
+'
+What is the output of the following code snippet?
+#include<iostream>
+using namespace std;
+voidafunction(int*x)
+{
+x=newint;
+*x=12;
+}
+intmain()
+{
+intv=10;
+afunction(&v);
+cout<<v;
+}
+',
+' a. 10',
+' b. 12',
+' c. Compilation Error',
+' d. Garbage Value',
+'1');
+
+insert into questions values('q29',
+'
+class myClass
+{
+public:
+MyClass() { cout << "MyClass ctor called..." << endl;}
+~MyClass() { cout << "~MyClass called..." << endl;}
+};
+int main()
+{
+MyClass obj();
+return 0;
+}
+In the above code which of the following will be called
+',
+' a. Constructor',
+' b. Destructor',
+' c. Both',
+' d. Neither',
+'4');
+
+insert into questions values('q30',
+'
+Find the output
+#include<stdio.h>
+main()
+{
+printf("%d",sizeof(!5.87));
+}
+',
+' a. 1',
+' b. 4',
+' c. 2',
+' d. 8',
+'1');
+
+
+insert into questions values('q31',
+'
+A programmer has an algorithm that requires a java.util.
+List that provides an efficient
+implementation of add
+(0, object), but does NOT need to support quick random access.
+ What supports these
+requirements?
+',
+' a. java.util.Queue',
+' b. java.util.ArrayList',
+' c. java.util.LinearList',
+' d. java.util.LinkedList',
+'4');
+
+insert into questions values('q32',
+'
+Given
+11. public interface Status {
+12. /* insert code here */ int MY_VALUE = 10;
+13. } 
+Which three are valid on line?
+',
+' a. final',
+' b. public',
+' c. abstract',
+' d. native',
+'1');
+
+insert into questions values('q33',
+'
+What is the output of the following code?
+5. class Atom {
+6. Atom() { System.out.print("atom "); }
+7. }
+8. class Rock extends Atom {
+9. Rock(String type) { System.out.print(type); }
+10. }
+11. public class Mountain extends Rock {
+12. Mountain() {
+13. super("granite ");
+14. new Rock("granite ");
+15. }
+16. public static void main(String[] a) { new Mountain(); }
+17. }
+What is the result?
+',
+' a. Compilation fails.',
+' b. granite granite',
+' c. An exception is thrown at runtime.',
+' d. atom granite atom granite',
+'4');
+
+insert into questions values('q34',
+'
+Given:
+10. class Line {
+11. public class Point { public int x,y;}
+12. public Point getPoint() { return new Point(); }
+13. }
+14. class Triangle {
+15. public Triangle() {
+16. // insert code here
+17. }
+18. }
+Which code, inserted at line 16, correctly retrieves a local 
+instance of a Point object?
+',
+' a. Point p = Line.getPoint();',
+' b. Line.Point p = Line.getPoint();',
+' c. Point p = (new Line()).getPoint();',
+' d. Line.Point p = (new Line()).getPoint();',
+'4');
+
+insert into questions values('q35',
+'
+Given:
+10. interface Foo { int bar(); }
+11. public class Sprite {
+12. public int fubar( Foo foo ) { return foo.bar(); }
+13. public void testFoo() {
+14. fubar(
+15. // insert code here
+16. );
+17. }
+18. }
+Which code, inserted at line 15, allows the class Sprite to compile?
+',
+' a. Foo { public int bar() { return 1; }',
+' b. new Foo { public int bar() { return 1; }',
+' c. new Foo() { public int bar() { return 1; }',
+' d. new class Foo { public int bar() { return 1; }',
+'3');
+
+insert into questions values('q36',
+'
+Given that the current directory is empty, and that the user has 
+read and write permissions,
+and the following:
+11. import java.io.*;
+12. public class DOS {
+13. public static void main(String[] args) {
+14. File dir = new File("dir");
+15. dir.mkdir();
+16. File f1 = new File(dir, "f1.txt");
+17. try {
+18. f1.createNewFile();
+19. } catch (IOException e) { ; }
+20. File newDir = new File("newDir");
+21. dir.renameTo(newDir);
+22. }
+23. }
+Which statement is true?
+',
+' a. The file system has a new empty directory named dir.',
+' b. The file system has a new empty directory named newDir.',
+' c. The file system has a directory named dir, containing a file f1.txt.',
+' d. The file system has a directory named newDir, containing a file f1.txt.',
+'4');
+
+insert into questions values('q37',
+'
+Given:
+11. class Converter {
+12. public static void main(String[] args) {
+13. Integer i = args[0];
+14. int j = 12;
+15. System.out.println("It is " + (j==i) + " that j==i.");
+16. }
+17. }
+What is the result when the programmer attempts to compile the code 
+and run it with the
+command java Converter 12?
+',
+' a. It is true that j==i.',
+' b. It is false that j==i.',
+' c. An exception is thrown at runtime.',
+' d. Compilation fails because of an error in line 13.',
+'4');
+
+insert into questions values('q38',
+'
+Given:
+3. interface Animal { void makeNoise(); }
+4. class Horse implements Animal {
+5. Long weight = 1200L;
+6. public void makeNoise() { System.out.println("whinny"); }
+7. }
+8. public class Icelandic extends Horse {
+9. public void makeNoise() { System.out.println("vinny"); }
+10. public static void main(String[] args) {
+11. Icelandic i1 = new Icelandic();
+12. Icelandic i2 = new Icelandic();
+13. Icelandic i3 = new Icelandic();
+14. i3 = i1; i1 = i2; i2 = null; i3 = i1;
+15. }
+16. }
+When line 15 is reached, how many objects are eligible for the garbage collector?
+',
+' a. 0',
+' b. 4',
+' c. 3',
+' d. 2',
+'2');
+
+insert into questions values('q39',
+'
+Given classes defined in two different files:
+1. package util;
+2. public class BitUtils {
+3. private static void process(byte[] b) {}
+4. }
+1. package app; 2
+. public class SomeApp {
+3. public static void main(String[] args) {
+4. byte[] bytes = new byte[256];
+5. // insert code here
+6. }
+7. }
+What is required at line 5 in class SomeApp to use the process 
+method of BitUtils?
+',
+' a. util.BitUtils.process(bytes);',
+' b. SomeApp cannot use the process method in BitUtils.',
+' c. BitUtils.process(bytes);',
+' d. app.BitUtils.process(bytes);',
+'2');
+
+insert into questions values('q40',
+'
+Given:
+11. public class ItemTest {
+12. private final int id;
+13. public ItemTest(int id) { this.id = id; }
+14. public void updateId(int newId) { id = newId; }
+15.
+16. public static void main(String[] args) {
+17. ItemTest fa = new ItemTest(42);
+18. fa.updateId(69);
+19. System.out.println(fa.id);
+20. }
+21. }
+What is the result?
+',
+' a. Compilation fails.',
+' b. An exception is thrown at runtime.',
+' c. The attribute id in the ItemTest object remains unchanged.',
+' d. The attribute id in the ItemTest object is modified to the new value.',
+'1');
+
+
+insert into questions values('q41',
+'
+Given:
+11. class Animal { public String noise() { return "peep"; } }
+12. class Dog extends Animal {
+13. public String noise() { return "bark"; }
+14. }
+15. class Cat extends Animal {
+16. public String noise() { return "meow"; }
+17. } ...
+30. Animal animal = new Dog();
+31. Cat cat = (Cat)animal;
+32. System.out.println(cat.noise());
+What is the result?
+',
+' a. peep',
+' b. meow',
+' c. Compilation fails.',
+' d. An exception is thrown at runtime.',
+'4');
+
+
+insert into questions values('q42',
+'
+Given :
+1. public class Threads3 implements Runnable {
+2. public void run() {
+3. System.out.print("running");
+4. }
+5. public static void main(String[] args) {
+6. Thread t = new Thread(new Threads3());
+7. t.run();
+8. t.run();
+9. t.start();
+10. }
+11. }
+What is the result?
+',
+' a. An exception is thrown at runtime.',
+' b. The code executes and prints "running".',
+' c. The code executes and prints "runningrunning".',
+' d. The code executes and prints "runningrunningrunning".',
+'4');
+
+
+insert into questions values('q43',
+'
+Given :
+#include<stdio.h>
+main()
+{
+      int a=4,b=2;
+      a=b<<a + b>>2;
+      b=b<<a + b>>2;
+      printf("%d %d",a,b);
+}
+What is the result?
+',
+' a. 2 32',
+' b. 32 2',
+' c. 2 2',
+' d. 32 32',
+'2');
+
+
+insert into questions values('q44',
+'
+Given:
+1. class ClassA {
+2. public int numberOfInstances;
+3. protected ClassA(int numberOfInstances) {
+4. this.numberOfInstances = numberOfInstances;
+5. }
+6. }
+7. public class ExtendedA extends ClassA {
+8. private ExtendedA(int numberOfInstances) {
+9. super(numberOfInstances);
+10. }
+11. public static void main(String[] args) {
+12. ExtendedA ext = new ExtendedA(420);
+13. System.out.print(ext.numberOfInstances);
+14. }
+15. }
+Which statement is true?
+',
+' a. 420 is the output.',
+' b. An exception is thrown at runtime.',
+' c. Constructors CANNOT use the private modifier.',
+' d. All constructors must be declared public.',
+'1');
+
+
+insert into questions values('q45',
+'
+Given two files, GrizzlyBear.java and Salmon.java:
+1. package animals.mammals;
+2.
+3. public class GrizzlyBear extends Bear {
+4. void hunt() {
+5. Salmon s = findSalmon();
+6. s.consume();
+7. }
+8. }
+1. package animals.fish;
+2.
+3. public class Salmon extends Fish {
+4. public void consume() { /* do stuff */ }
+5. }
+If both classes are in the correct directories for their packages, 
+and the Mammal class correctly
+defines the
+findSalmon() method, which change allows this code to compile?
+',
+' a. add import animals.mammals.*; at line 2 in Salmon.java',
+' b. add import animals.fish.*; at line 2 in GrizzlyBear.java',
+' c. add import animals.fish.Salmon.*; at line 2 in GrizzlyBear.java',
+' d. add import animals.mammals.GrizzlyBear.*; at line 2 in Salmon.java',
+'2');
+
+
+insert into questions values('q46',
+'
+Given:
+11. interface DeclareStuff {
+12. public static final int EASY = 3;
+13. void doStuff(int t); }
+14. public class TestDeclare implements DeclareStuff {
+15. public static void main(String [] args) {
+16. int x = 5;
+17. new TestDeclare().doStuff(++x);
+18. }
+19. void doStuff(int s) {
+20. s += EASY + ++s;
+21. System.out.println("s " + s);
+22. }
+23. }
+What is the result?
+',
+' a. s 14',
+' b. s 14',
+' c. s 10',
+' d. Compilation fails.',
+'4');
+
+insert into questions values('q47',
+'
+Given:
+12. public class Test {
+13. public enum Dogs {collie, harrier};
+14. public static void main(String [] args) {
+15. Dogs myDog = Dogs.collie;
+16. switch (myDog) {
+17. case collie:
+18. System.out.print("collie ");
+19. case harrier:
+20. System.out.print("harrier ");
+21. }
+22. }
+23. }
+What is the result?
+',
+' a. collie',
+' b. harrier',
+' c. Compilation fails.',
+' d. collie harrier',
+'4');
+
+insert into questions values('q48',
+'
+Find the output of the following program :
+ #include <stdio.h>
+ #define PrintInt(expr) printf("%s : %d\n",#expr,(expr))
+ int main()
+{
+    int y = 100;
+    int *p;
+    p = malloc(sizeof(int));
+    *p = 10;
+    y = y/*p; /*dividing y by *p */;
+    PrintInt(y);
+    return 0;
+}
+',
+' a. 10:10',
+
+' b. 10:100',
+' c. y:10',
+' d. y:100',
+'4');
+
+
+insert into questions values('q49',
+'
+What is the output?
+#include <stdio.h>
+ int main()
+{
+    int i = 6;
+    if( ((++i < 7) && ( i++/6)) || (++i <= 9))
+        ;
+    printf("%d",i);
+    return 0;
+}
+',
+' a. 6',
+' b. 7',
+' c. 8',
+' d. 9',
+'3');
+
+insert into questions values('q50',
+'
+What is the output?
+int z,x=5,y=-10,a=4,b=2; 
+z = x++ - --y * b / a;
+',
+' a. 5',
+' b. 10',
+' c. 11',
+' d. 12',
+'2');
+
+
+insert into questions values('q51',
+'
+What is the output of the following snippet?
+
+int main()
+{
+    int i;
+    char test[] = "This is a tricky one..";
+    for(i=0; test[i]!=\'s\', test[i]!=\'r\'; i++)
+        printf("%c",test[i]);
+}
+',
+' a. Thi',
+' b. This i',
+' c. This is a t',
+' d. This is a tricky one..',
+'3');
+
+insert into questions values('q52',
+'
+What is the output of the given statement?
+
+printf("World%d",printf("Hello"));
+',
+' a. HelloWorld6',
+' b. HelloWorld1',
+' c. HelloWorld5',
+' d. World1Hello',
+'3');
+
+insert into questions values('q53',
+'
+What is the output of following code?
+
+#include<stdio.h>
+#define x 5+2
+int main()
+{
+   int i;
+   i=x*x*x;
+   printf("%d",i);
+   return 0;
+}
+',
+' a. 343',
+' b. 27',
+' c. 133',
+' d. Error- 5+2 cannot be used in #Define',
+'2');
+
+insert into questions values('q54',
+'
+What is the output of the folliwing program?
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   wchar_t en[] = L"Hello";
+   cout<< en;
+   return 0;
+}
+',
+' a. Hello',
+' b. Compilation Error',
+' c. Segmentation Fault',
+' d. Prints some hexadecimal value',
+'4');
+
+insert into questions values('q55',
+'
+What is the output of the following code?
+
+#include<stdio.h>
+
+int main()
+{
+    float a;
+    (int)a= 45;
+    printf("%d”,a);
+    return 0;
+}
+',
+' a. 45',
+' b. Garbage Value',
+' c. Compilation Error',
+' d. Runtime Error',
+'3');
+
+insert into questions values('q56',
+'
+Predict the output of the following program :
+    #include<stdio.h>
+    #define var 3
+    void main()
+    {
+        char *cricket[var+~0]={"clarke","kallis"};
+        char *ptr=cricket[1+~0];
+        printf("%c",*++ptr);
+    }
+',
+' a. a',
+' b. l',
+' c. Compilation error',
+' d. None of the above',
+'2');
+
+
+insert into questions values('q57',
+'
+Predict the output of the following code snippet:
+    #include<stdio.h>
+    int main()
+    {
+        char a=250;
+        int expr;
+        expr= a+ !a + ~a + ++a;
+        printf("%d",expr);
+        return 0;
+    }
+',
+' a. 249',
+' b. 0',
+' c. -6',
+' d. 250',
+'3');
+
+
+insert into questions values('q58',
+'
+Which function will perform faster?
+void f1(BigObject x) { /* ... */ }
+void f2(const BigObject& x) { /* ... */ }
+BigObject y;
+f1(y);
+f2(y);
+',
+' a. Time taken in both cases is the same',
+' b. f1 takes lesser time as & includes overhead',
+' c. f2 takes lesser time as f1 actually copies object values',
+' d. f2 takes more time as f2 provides access restrictions which requires OS interaction',
+'3');
+
+
+insert into questions values('q59',
+'
+Given the following piece of code:
+class Person{ public void talk(){} }
+public class Test{
+public static void main(String args[]){
+Person p = null;
+try{
+p.talk();
+} catch(NullPointerException e){
+System.out.print("There is a NullPointerException. ");
+} catch(Exception e){
+System.out.print("There is an Exception. ");
+}
+System.out.print("Everything went fine. ");
+}
+}
+what will be the result?
+',
+' a. If you run this program, the outcome is:There is a NullPointerException. Everything went fine.',
+' b. If you run this program, the outcome is:There is a NullPointerException.',
+' c. If you run this program, the outcome is:There is a NullPointerException. There is an Exception.',
+' d. This code will not compile, because in Java there are no pointers.',
+'1');
+
+insert into questions values('q60',
+'
+Which two code fragments will compile?
+interface Base
+{
+boolean m1 ();
+byte m2(short s);
+}
+1.
+2. interface Base2 implements Base{}
+3.
+
+4. abstract class Class2 extends
+Base
+5. { public boolean m1(){ return true; }}
+6.
+
+7. abstract class Class2
+implements Base {}
+8.
+
+9. abstract class Class2
+implements Base
+10. { public boolean m1(){ return (7 > 4); }}
+11.
+
+12. abstract class Class2 implements Base
+13. { protected
+boolean m1(){ return (5 > 7) }}
+',
+' a. 1 and 2',
+' b. 2 and 3',
+' c. 3 and 4',
+' d. 1 and 5',
+'3');
+
+insert into questions values('q61',
+'
+Which three form part of correct array declarations?
+1.
+2. public int a [ ]	///1
+3.
+4. static int [ ] a	//2
+5.
+6. public [ ] int a	//3	
+7.
+8. private int a [3]	//4
+9.
+10. private int [3] a [ ]	//5
+11.
+12. public final int [ ] a	//6
+',
+' a. 1, 3, 4',
+' b. 2, 4, 5',
+' c. 1, 2, 6',
+' d. 2, 5, 6',
+'3');
+
+insert into questions values('q62',
+'
+ public class tester
+{
+public static void main(String[] args)
+{
+System.out.print("Welcome to SSN");
+}
+static
+{
+System.out.print("Greetings from Code County");
+}
+}
+',
+' a. Welcome to SSN Greetings from Code County',
+' b. Greetings from Code County Welcome to SSN',
+' c. No Output',
+' d. Error occurs',
+'2');
+insert into questions values('q63',
+'
+Consider the following code:
+public class tester {
+public static void main(String[] args) {
+int Number1 = 256;
+int Number2 = 128;
+int Number3 = 64;
+System.out.println(Number1 >> Number2 << Number3 >> 2);
+}
+}
+What would be the output for the following?
+',
+' a. 64',
+' b. 256',
+' c. 128',
+' e. 0',
+'1');
+
+
+insert into questions values('q64',
+'
+Will the following code produce an output or not? Assume both the classes are in the same
+package.
+class FinalClass {
+private final long someValue;
+long getValue() {
+return someValue;
+}
+}
+public class tester {
+public static void main(String[] args){
+FinalClass fc = new FinalClass();
+System.out.println(fc.getValue());
+}
+}
+',
+' a. 0 is printed',
+' b. Program does not compile due to no initialization',
+' c. Program does not compile due to accessing of private member',
+' d. Program does not compile due to class FinalClass not found',
+'2');
+
+insert into questions values('q65',
+'
+Predict the output:
+class GoogleMagic {
+public static void main(String[] s) {
+System.out.println("Here starts the magic...");
+http://WWW.Google.COM;
+System.out.println("Here ends the magic.");
+}
+}
+',
+' a. Compiles correctly but does not execute',
+' b. Does not compile at all',
+' c. Output:
+Here starts the magic...
+Here ends the magic...
+',
+' d. Output:
+Here starts the magic...
+',
+'3');
+
+insert into questions values('q66',
+'
+Predict the output:
+public class C {
+}
+public class D extends C{
+}
+public class A {
+public C getOBJ(){
+System.out.println("class A - return C");
+return new C();
+}
+}
+public class B extends A{
+public D getOBJ(){
+System.out.println("class B - return D");
+return new D();
+}
+}
+public class Test {
+public static void main(String... args) {
+A a = new B();
+a.getOBJ();
+}
+}
+',
+' a. Compile with error - Not allowed to override the return type of a method with a subtype
+of the original type.',
+' b. class A - return C',
+' c. class B - return D',
+' d. Runtime Exception',
+'3');
+
+
+insert into questions values('q67',
+'
+Predict the output:
+Class Tester {
+public static void main(String... args) {
+String input = "1 fish 2 fish red fish blue fish";
+Scanner s = new Scanner(input).useDelimiter("\\s*fish\\s*");
+System.out.println(s.nextInt());
+System.out.println(s.nextInt());
+System.out.println(s.next());
+System.out.println(s.next());
+s.close();
+}
+}
+',
+' a. 1 2 red blue',
+' b. Compile Error',
+' c. 1 fish 2 fish red fish blue fish',
+' d. 1 fish 2 fish red blue fish',
+'1');
+
+
+insert into questions values('q68',
+'
+What is the output?
+# include<stdio.h>
+1.
+aaa() {
+printf("hi");
+}
+bbb(){
+printf("hello");
+}
+ccc(){
+printf("bye");
+}
+main()
+{
+int (*)ptr[3]();
+ptr[0]=aaa;
+ptr[1]=bbb;
+ptr[2]=ccc;
+ptr[2]();
+}
+',
+' a. hi',
+' b. hello',
+' c. bye',
+' d. Compiler error',
+'4');
+
+
+insert into questions values('q69',
+'
+class MyThread extends Thread
+{
+        public static void main(String [] args)
+        {
+                MyThread t = new MyThread(); /* Line 5 */
+                t.run(); /* Line 6 */
+        }
+        public void run()
+        {
+                for(int i=1; i < 3; ++i)
+                {
+                     System.out.print(i + "..");
+                }
+        }
+}
+',
+' a. Won\'t compile due to line 5',
+' b. Won\'t compile due to line 6',
+' c. 1..2..',
+' d. 1..2..3..',
+'3');
+
+insert into questions values('q70',
+'
+Predict the output:
+class Shift
+{
+        public static void main(String [] args)
+        {
+                int x = 0x80000000;
+                System.out.print(x + " and ");
+                x = x >>> 31;
+                System.out.println(x);
+        }
+}
+',
+' a. -2147483648 and 1',
+' b. 0x80000000 and 0x00000001',
+' c. -2147483648 and -1',
+ 'd. 1 and -2147483648',
+'1');
+
+insert into questions values('q71',
+'
+Find the output
+#include<stdio.h>
+#define L 10
+main(){
+        int money=10;
+        switch(money,money*2)
+        {
+                case L: 
+                        printf("William");
+                        break;
+                case L*2:
+                        printf("Warren");
+                        break;
+                case L*3:
+                        printf("Carlos");
+                        break;
+                default: 
+                        printf("Lawrence");
+                        break;
+                case L*4:
+                        printf("Inqvar");
+                        break;
+        }
+}
+',
+' a. Error',
+' b. William',
+' c. Warren',
+' d. Lawrence',
+'3');
+
+insert into questions values('q72',
+'
+What is the output?
+#include<stdio.h>
+struct game
+{
+        int level;
+        int score;
+        struct player
+        {
+                char *name;
+        }g2={"anil"};
+}g3={10,200,};
+int main()
+{
+        struct game g1=g3;
+        printf("%d %d %s",g1.level,g1.score,g1.g2.name);
+}
+',
+' a. 10 200 anil',
+' b. 10 200 null',
+' c. Segmentation Fault',
+' d. Compilation Error',
+'4');
+
+insert into questions values('q73',
+'
+Given:
+11. String test = "Test A. Test B. Test C.";
+12. // insert code here
+13. String[] result = test.split(regex);
+Which regular expression, inserted at line 12, correctly splits test into "Test A", "Test B",
+and "Test C"?
+',
+' a. String regex= "";',
+' b. String regex= ".*";',
+' c. String regex= "\\.\\s*";',
+' d. String regex= "\\w[ \.] +";',
+'3');
+
+
+insert into questions values('q74',
+'
+Given a class Repetition:
+1. package utils;
+2.
+3. public class Repetition {
+4. public static String twice(String s) { return s + s; }
+5. } and given another class Demo: 1. // insert code here
+2.
+3. public class Demo {
+4. public static void main(String[] args) {
+5. System.out.println(twice("pizza"));
+6. }
+7. }
+Which code should be inserted at line 1 of Demo.java to compile and run Demo to
+print "pizzapizza"?
+',
+' a. import static utils.Repetition.twice;',
+' b. static import utils.*;',
+' c. import utils.Repetition.twice();',
+' d. static import utils.Repetition.*;',
+'1');
+
+
+insert into questions values('q75',
+'
+Given:
+11. class A {
+12. public void process() { System.out.print("A,"); }
+13. class B extends A {
+14. public void process() throws IOException {
+15. super.process();
+16. System.out.print("B,");
+17. throw new IOException();
+18. }
+19. public static void main(String[] args) {
+20. try { new B().process(); }
+21. catch (IOException e) { System.out.println("Exception"); }
+22. }
+What is the result?
+',
+' a. Exception',
+' b. A,B,Exception',
+' c. Compilation fails because of an error in line 20.',
+' d. Compilation fails because of an error in line 14.',
+'4');
+
+
+insert into questions values('q76',
+'
+Given:
+12. import java.util.*;
+13. public class Explorer1 {
+14. public static void main(String[] args) {
+15. TreeSet<Integer> s = new TreeSet<Integer>();
+16. TreeSet<Integer> subs = new TreeSet<Integer>();
+17. for(int i = 606; i < 613; i++)
+18. if(i%2 == 0) s.add(i);
+19. subs = (TreeSet)s.subSet(608, true, 611, true);
+20. s.add(609);
+21. System.out.println(s + " " + subs);
+22. }
+23. }
+What is the result?
+',
+' a. Compilation fails.',
+' b. An exception is thrown at runtime.',
+' c. [606, 608, 609, 610, 612] [608, 609, 610]',
+' d. [608, 609, 610, 612] [608, 610]',
+'3');
+
+
+insert into questions values('q77',
+'
+Given:
+1. public class Donkey {
+2. public static void main(String[] args) {
+3. boolean assertsOn = false;
+4. assert (assertsOn) : assertsOn = true;
+5. if(assertsOn) {
+6. System.out.println("assert is on");
+7. }
+8. }
+9. }
+If class Donkey is invoked twice, the first time 
+without assertions enabled, and the second time
+with assertions
+enabled, what are the results?
+',
+' a. no output',
+' b. no output
+        assert is on',
+' c. assert is on',
+' d. no output
+        An AssertionError is thrown.',
+'4');
+
+
+insert into questions values('q78',
+'
+Given:
+22. public void go() {
+23. String o = "";
+24. z:
+25. for(int x = 0; x < 3; x++) {
+26. for(int y = 0; y < 2; y++) {
+27. if(x==1) break;
+28. if(x==2 && y==1) break z;
+29. o = o + x + y;
+30. }
+31. }
+32. System.out.println(o);
+33. }
+What is the result when the go() method is invoked?
+',
+' a. 00',
+' b. 0001',
+' c. 000120',
+' d. 00012021',
+'3');
+
+
+insert into questions values('q79',
+'
+Given:
+11. static class A {
+12. void process() throws Exception { throw new Exception(); }
+13. }
+14. static class B extends A {
+15. void process() { System.out.println("B"); }
+16. }
+17. public static void main(String[] args) {
+18. new B().process();
+19. }
+What is the result?
+',
+' a. B',
+' b. The code runs with no output.',
+' c. Compilation fails because of an error in line 12.',
+' d. Compilation fails because of an error in line 15.',
+'1');
+
+
+insert into questions values('q80',
+'
+What will be the output of the following program ?
+#include<stdio.h>
+int main()
+{
+        int a=10;
+        switch(a)
+        {
+                case \'1\':
+                printf("ONE\n");
+                break;
+                case \'2\':
+                printf("TWO\n");
+                break;
+                defa1ut:
+                printf("NONE\n");
+        }
+        return 0;
+}
+',
+' a. Compiler Error',
+' b. Runtime Error',
+' c. No ouput',
+' d. NONE',
+'3');
+
+
+insert into questions values('q81',
+'
+#include<stdio.h>
+#define concatinate(a,b) a##b
+#define same1(a)  #a
+#define same2(a)  same1(a)
+main()
+{
+    	printf("%s\n",same2(concatinate(1,2)));
+    	printf("%s\n",same1(concatinate(1,2)));
+}
+',
+' a. 12 and 12 ',
+' b. concatinate(1,2) and 12',
+' c. 12 and concatinate(1,2)',
+' d. concatinate(1,2) and concetinate(1,2)',
+'3');
+
+
+insert into questions values('q82',
+'
+Which of the following may have duplicate elements?
+
+A)Collection
+
+B) List
+
+C) Map
+
+D) Set
+
+',
+' a. A and B',
+' b. A,B and C',
+' c. A , D and B',
+' d. None',
+'1');
+
+insert into questions values('q83',
+'
+What code would you use to construct a 24-point bold serif font?
+
+A. new Font(Font.SERIF, 24,Font.BOLD);
+B. new Font("SERIF", 24, BOLD");
+C. new Font("BOLD ", 24,Font.SERIF);
+D. new Font("SERIF", Font.BOLD,24);
+E. new Font(Font.SERIF, "BOLD", 24);
+',
+' a. A and B',
+' b. D',
+' c. C',
+' d. All',
+'2');
+
+insert into questions values('q84',
+'
+Which of the following classes are not derived from the 
+Container class.
+',
+' a. MenuComponent',
+' b. Panel',
+' c. java.applet.Applet',
+' d. Dialog',
+'1');
+
+insert into questions values('q85',
+'
+Predict the output :
+ 
+#include<stdio.h>
+main()
+{
+    	int a=1,b=3,c,d;
+    	c=(a,b);
+    	d=a,b,c;
+    	printf("%d %d",c,d);
+}
+',
+
+' a. 1 and 1', 
+' b.  3 and 3',
+' c. 1 and 3 ',
+' d. 3 and 1',
+'4');
+
+insert into questions values('q86',
+'
+Find the output of the code snippet 
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+       int*ptr=(int*)malloc(sizeof(int));
+       *ptr=4;
+       printf("%d",(*ptr)+++*ptr++);
+}
+',
+' a. 8',
+' b. 9',
+' c. 10 ',
+' d. 11 ',
+'1');
+
+insert into questions values('q87',
+'
+What is the output?
+#include<stdio.h>
+int array[]={1,2,3,4,5,6,7,8};
+#define SIZE (sizeof(array)/sizeof(int))
+
+int main()
+{
+       printf("%d",SIZE);
+       if(-1<=SIZE) printf("1");
+       else printf("2");
+       return 0;
+}
+',
+' a. 82',
+' b. 81',
+' c. compiler error ',
+' d. runtime error ',
+'1');
+
+insert into questions values('q88',
+'
+Given:
+11. public interface A { public void m1(); }
+12.
+13. class B implements A { }
+14. class C implements A { public void m1() { } }
+15. class D implements A { public void m1(int x) { } }
+16. abstract class E implements A { }
+17. abstract class F implements A { public void m1() { } }
+18. abstract class G implements A { public void m1(int x) { } }
+What is the result?
+',
+' a. Compilation succeeds.',
+' b. Exactly one class does NOT compile.',
+' c. Exactly two classes do NOT compile.',
+' d. Exactly four classes do NOT compile.',
+'4');
+
+
+insert into questions values('q89',
+'
+Given:
+1. public class BuildStuff {
+2. public static void main(String[] args) {
+3. Boolean test = new Boolean(true);
+4. Integer x = 343;
+5. Integer y = new BuildStuff().go(test, x);
+6. System.out.println(y);
+7. }
+8. int go(Boolean b, int i) {
+9. if(b) return (i/7);
+10. return (i/49);
+11. }
+12. }
+What is the result?
+',
+' a. 7',
+' b. 49',
+' c. 343',
+' d. Compilation fails.',
+'2');
+
+
+insert into questions values('q90',
+'
+What will be output if you will compile and execute the following c code?
+#include<stdio.h>
+int main()
+{
+        int i=320;
+        char *ptr=(char *)&i;
+        printf("%d",*ptr);
+        return 0;
+}',
+' a.320',
+' b. 1',
+' c. 64',
+' d. None of above',
+'3');
+
+insert into questions values('q91',
+'
+What will be output if you will compile and execute the
+following c code?
+#include<stdio.h>
+int main()
+{
+        float a=5.2;
+        if(a==5.2)
+                printf("Equal");
+        else if(a<5.2)
+                printf("Less than");
+        else
+                printf("Greater than");
+        return 0;
+}',
+' a. Equal',
+' b. Less than',
+' c. Greater than',
+' d. Compiler error',
+'2');
+
+insert into questions values('q92',
+'
+What will be the output of the following statement ?
+
+printf("%X%x%ci%x",11,10,\'s\',12);',
+' a. basc',
+' b. Basic',
+' c. Bas106c',
+' d. None of these',
+'2');
+
+insert into questions values('q93',
+'
+What is the purpose of this code snippet :
+void main()
+{    	 
+        char a[30];
+        scanf("%[^\n]",a);
+        printf("%s",a);
+}',
+' a. The code uses scanf to read a line of string which 
+includes white spaces.',
+' b. scanf reads one single word',
+' c. Compilation Error',
+' d. Runtime Error',
+'1');
+
+insert into questions values('q94',
+'
+Predict the output:
+#include<stdio.h>
+const enum Alpha
+{
+        X,
+        Y=5,
+        Z
+}p=10;
+int main()
+{
+        enum Alpha a,b;
+        a= X;
+        b= Z;
+        printf("%d",a+b-p);
+        return 0;
+}
+',
+' a. -4',
+' b. -5',
+' c. 10',
+' d. 11',
+'1');
+
+insert into questions values('q95',
+'
+Consider the following code:
+public class Tester
+{
+        public static void main(String[] args)
+        {
+                if ( false == true )
+                { // \u000a\u007d\u007b
+                        System.out.println("false is true!");
+                }
+        }
+}
+What is the output for the above code? Assume the code 
+to be syntactically correct
+',
+' a. false is true!!',
+' b. No Output',
+' c. Error is thrown',
+' d. None of the above',
+'1');
+
+insert into questions values('q96',
+'
+Consider the following code:
+public class Tester {
+        public static void main(String[] args) 
+        {
+                //char a = \'\u000A\';
+                char a = \'A\';
+                System.out.println(a);
+        }
+}
+What would be the output for the following?
+',
+' a. A',
+' b. a',
+' c. Error: unclosed character literal',
+' d. None of the above',
+'3');
+
+insert into questions values('q97',
+'
+Magic Numbers in the Computer Science Field refers
+ to a constant numerical or text value
+used to identify a file format or protocol. 
+Java has its own unique Magic Number for its Java
+Class File. Which is it of the following?
+',
+' a. 0xCAFEBABE',
+' b. 0xCAFEDEAD',
+' c. 0xBADDCAFE',
+' d. 0xCAFEFEED',
+'1');
+
+insert into questions values('q98',
+'
+What is the Output of the following code?
+#include<stdio.h>
+int main()
+{
+        printf("\103\117\104\105");
+        return 0;
+}
+',
+' a. 03170405',
+' b. CODE',
+' c. code',
+' d. 103117104105',
+'2');
+
+insert into questions values('q99',
+'
+Find the output
+#include<stdio.h>
+main()
+{
+        int a = 5,b = 10,c;
+        int *p = &a,*q = &b;
+        c = p - q;
+        printf("%d" , c);
+}
+',
+' a. 1',
+' b. -1',
+' c. 4',
+' d. Error',
+'2');
+
+insert into questions values('q100',
+'
+Predict the output:
+public class tester
+{
+        public static void main(String[] args)
+        {
+                Integer i = 127;
+                Integer j = 127;
+                System.out.print(i == j);
+                System.out.print(i.equals(j));
+                Integer i1 = 128;
+                Integer j1 = 128;
+                System.out.print(i1 == j1);
+                System.out.print(i1.equals(j1));
+        }
+}
+',
+' a. true false true true',
+' b. false false false false',
+' c. true true true true',
+' d. true true false true',
+'4');
+
+
+
+insert into questions values('q101',
+'
+What does the following code do?
+def a(b, c, d): pass
+',           
+' a. defines a list and initializes it',
+' b. defines a function, which does nothing',
+' c. defines a function, which passes its parameters through',
+' d. defines an empty class',
+'2');
+
+insert into questions values('q102',
+'
+What gets printed? Assuming python version 2.x
+
+print type(1/2)
+',
+' a. <type \'int\'>',
+' b. <type \'number\'>',
+' c. <type \'float\'>',
+' d. <type \'double\'>',
+'1');
+        
+insert into questions values('q103',
+'
+What is the output of the following code?
+
+print type(lambda:None)
+',
+' a. <type \'NoneType\'>',
+' b. <type \'tuple\'>',
+' c. <type \'type\'>',
+' d. <type \'function\'>',
+'4');
+
+
+insert into questions values('q104',
+'        
+What gets printed?
+           
+x = 4.5
+y = 2
+print x//y
+',
+' a. 2.0',
+' b. 2.25',
+' c. 9.0',
+' d. 20.25',
+'1');
+
+insert into questions values('q105',
+'
+What gets printed?
+
+           
+x = True
+y = False
+z = False
+
+if x or y and z:
+   print "yes"
+else:
+   print "no"
+',
+' a. yes',
+' b. no',
+' c. error',
+' d. no output',
+'1');
+
+insert into questions values('q106',
+'
+What is the ouput of the following Python Code fragment?
+c={\'a\':12,\'b\':45}
+for x in c:
+    print c,
+    print x,
+',
+' a. a b',
+' b. 12 45',
+' c. {\'a\': 12, \'b\': 45} a {\'a\': 12, \'b\': 45} b',
+' d.{12,45} {a,b} {12,45} {a,b}',
+'3');
+
+
+insert into questions values('q107',
+'
+What is the output of the following fragment of code?                  
+
+for i in range(0,12):
+    if i==0:
+        break;
+else:
+    print \'i was never zero\'
+',
+' a. i=0',
+' b. Indentation Error',
+' c. i was never zero',
+' d. Nothing',
+'4');
+
+insert into questions values('q108',
+'
+What is the output of the following code fragment?
+
+d={}
+for c in (65,97):
+
+    for i in range(26):
+
+        d[chr(c+i)]=chr((i+13)%26+c)
+
+gen=\'\'.join([d.get(c,c) for c in \'Paradigm is Great\'])
+gen=\'\'.join([d.get(c,c) for c in gen])
+print gen
+',
+' a. pArAdIgM Is gReAt',
+' b. Paradigm is Great',
+' c. QbSbEjHn Jt HsFbU',
+' d. Error',
+'2');
+
+insert into questions values('q109',
+'
+What is the output of the following code?
+d=[(i,j) for i in range(0,4) for j in range(i)]
+print d
+',
+' a. [0, 0, 1, 1, 2, 2, 3, 3]',
+' b. [(0,0), (1,0), (2,0), (3,0), (4,0), (0,1), (1,1), (2,1), (3,1), (4,1)]',
+' c. [(1, 0), (2, 0), (2, 1), (3, 0), (3, 1), (3, 2)]',
+' d. [(0,0), (1, 0), (1,1), (2, 0), (2, 1), (3, 0), (3, 1), (3, 2)]',
+'3');
+
+insert into questions values('q110',
+'
+What is the output of the following code fragment?
+a=set([1,21,1,23,23,45])
+b=set([23,54,54,45,67])
+print a|b,
+print a^b,
+print a&b,
+',
+' a. set([1,1,21, 45, 21, 54, 23]) set([1, 67, 21]) set([45])',
+'b. set([1, 67, 45, 21, 54, 23]) set([1, 67, 21, 54]) set([45, 23])',
+' c. set([45, 21, 54, 23]) set([1, 67, 21, 54]) set([23,21])',
+' d. set([ 45, 21, 54, 23]) set([1, 67, 21, 54]) set([45, 23])',
+'2');
+
+insert into questions values('q111',
+'
+What is the output of the following code fragment?
+A=[89,90]
+b=A
+A=[56,78,23]
+b.append(23)
+print A," ",b,
+print A is b,
+print A is not b,
+',
+' a. [56, 78, 23]   [56, 78, 23] True False',
+' b. [89, 90, 23 ]   [89, 90, 23] True False',
+' c. [56, 78, 23]   [89, 90, 23] False True',
+' d. [56, 78, 23]   [89, 90] False True',
+'3');
+
+insert into questions values('q112',
+'
+What is the output of the following code fragment?                  
+
+print str(round(12.67,1)),
+print str(round(12.67,-2)),
+',
+' a.12.7 0.0',
+' b. 12.6 12',
+' c. 12.7 0.67',
+' d. 12 12',
+'1');
+
+
+insert into questions values('q113',
+'
+What is the output of the following code fragment?
+
+def doNothing():
+    pass
+doNothing.monkeys = 4
+print doNothing.monkeys**doNothing.mokeys
+',
+' a. Error',
+' b. 4**4',
+' c. 256',
+' d. 16',
+'3');
+
+
+insert into questions values('q114',
+'
+What is the output of the following code?
+
+i=[1,2,3,4,5,6,7,8]
+iterator=[iter(i)]*2
+print iterator[0].next(),
+print iterator[1].next(),
+print iterator[0].next(),
+print iterator[0] is iterator[1],
+',
+' a. 1 2 3 True',
+' b. 1 1 2 False',
+' c. Error',
+' d. 1 1 2 True',
+'1');
+
+insert into questions values('q115',
+'
+What is the output of the following code fragment?
+x=2
+y=45
+z=4
+print pow(x,y,z)
+',
+' a. 0',
+' b. 17592186044416L',
+' c. 35184372088832L',
+' d. Error',
+'1');

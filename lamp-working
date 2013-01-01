@@ -1,0 +1,22 @@
+To restart server :
+sudo /etc/init.d/apache2 restart
+
+To create a new site :
+
+To create a new site:
+
+    Copy the default website as a starting point. sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/mysite 
+
+    Edit the new configuration file in a text editor "sudo nano" on the command line or "gksudo gedit", for example: gksudo gedit /etc/apache2/sites-available/mysite
+
+    Change the DocumentRoot to point to the new location. For example, /home/user/public_html/
+
+    Change the Directory directive, replace <Directory /var/www/> to <Directory /home/user/public_html/>
+
+    You can also set separate logs for each site. To do this, change the ErrorLog and CustomLog directives. This is optional, but handy if you have many sites
+    Save the file 
+
+
+To enable site :
+
+sudo a2dissite prevsite && sudo a2ensite cursite

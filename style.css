@@ -1,0 +1,398 @@
+/* Total area style */
+#total_area{
+  position: relative;
+}
+
+/* Left pane style */
+
+#access_pane{
+  float : left;
+  width : 30%;
+  height : 95%;
+  margin: 10px;
+  border: 2px solid #383939;
+  -moz-border-radius: 1em 4em 1em 4em;
+  border-radius: 1em 4em 1em 4em;
+  /*background-color:#E4DAD8;*/
+  background-image: url(bg.png);
+  -moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
+  -o-background-size: 100% 100%;       /* Opera 9.5 */
+  -webkit-background-size: 100% 100%;  /* Safari 3.0 */
+  -khtml-background-size: 100% 100%;   /* Konqueror 3.5.4 */
+  /*background-color:rgba(204,79,39,1);*/
+}
+
+/* Load area style */
+#load_area{
+  position: relative;
+  float: left;
+  width : 60%;
+  height : 95%;
+  margin:10px 10px 10px 20px;
+  border: 2px solid #383939;
+  border-radius: 5.0em;
+  /*background-color:#E4DAD8;*/
+  /*background-color:white;*/
+  background-image: url(bg.png);
+  -moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
+  -o-background-size: 100% 100%;       /* Opera 9.5 */
+  -webkit-background-size: 100% 100%;  /* Safari 3.0 */
+  -khtml-background-size: 100% 100%;   /* Konqueror 3.5.4 */
+  font: 12px 'bariol_regular','trebuchet MS', 'lucida sans'; 
+}
+
+#mainpage
+{
+  position: relative;
+  float: left;
+  width : 80%;
+  height : 95%;
+  margin:10px 10px 10px 10%;
+  border: 2px solid #383939;
+  border-radius: 5.0em;
+  /*background-color:#E4DAD8;*/
+  /*background-color:white;*/
+  background-image: url(bg.png);
+  -moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
+  -o-background-size: 100% 100%;       /* Opera 9.5 */
+  -webkit-background-size: 100% 100%;  /* Safari 3.0 */
+  -khtml-background-size: 100% 100%;   /* Konqueror 3.5.4 */
+  font: 12px 'bariol_regular','trebuchet MS', 'lucida sans'; 
+}
+
+#logo{
+  width : 60px;
+  height: 48px;
+  margin: 2em 0px 10px 2.5em;
+  float : left;
+  border: 1px solid rgba(1,1,1,0);
+}
+
+#topic{
+  width : 60%;
+  height: 40px;
+  margin: 2em 10px 10px 100px;
+  float : left;
+  text-align: center;
+  border: 1px solid rgba(1,1,1,0);
+}
+
+#sub_topic{
+  clear: both;
+  width: 50%;
+  height:40px;
+  margin-left: 45%;
+  text-align: right;
+  color:#1F1919;
+  border: 1px solid rgba(1,1,1,0);
+}
+
+#disp_area{
+  height: 70%;
+  width: 90%;
+  margin: 5px 5px 5px 30px;
+  /*border: 1px solid rgba(1,1,1,1);*/
+  overflow:hidden;
+  position:relative;
+}
+
+#disp_area p{
+  margin-left: 10px;
+}
+
+#first{
+  margin-top: 2%;
+}
+
+.mousescroll{
+  font-size: 14px;
+  width: 90%;
+  height: 30%;
+  margin-left: 0%;
+  margin-top: 0%;
+  border: 1px solid rgba(1,1,1,0);
+}
+
+.mousescroll {
+    overflow: hidden;
+}
+.mousescroll:hover {
+    overflow-y: scroll;
+}
+
+.slimScrollDiv { border: 1px solid #CCCCCC; margin-left:4%;margin-top: 2%; }
+
+/* The list style */
+
+ol{ 
+  counter-reset: li; /* Initialize the counter */ 
+  list-style: none; /* Remove the default numbering */
+  *list-style: decimal; /* For IE6 / 7 use the default numbering*/ 
+  font: 15px 'bariol_regular','trebuchet MS', 'lucida sans'; 
+  padding: 0; 
+  margin-bottom: 4em; 
+  text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+  } 
+ 
+  ol ol{ 
+  margin: 0 0 0 2em;
+  } 
+ 
+ 
+  .rounded li{ 
+  position: relative; 
+  display: block; 
+  padding: .4em .4em .4em 2em; 
+  *padding: .4em; 
+  margin: 13px 30px; 
+  background: #4E9CB5; 
+  color: #000; 
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: .3em;
+  } 
+ 
+  .rounded li:hover{ 
+  background: #F9F9F9;
+  border: 1px solid #383939; 
+  cursor: pointer;
+  } 
+ 
+  .rounded li:hover:before{ 
+  transform: rotate(360deg); 
+  } 
+ 
+  .rounded li:before{ 
+  content: counter(li); 
+  counter-increment: li; 
+  position: absolute; 
+  left: -1.3em;
+  margin-top: -1.3em;
+  top: 54%;   
+  background: #BAC1C1; 
+  height: 2em; 
+  width: 2em; 
+  line-height: 2em; 
+  border: .2em solid #383939; 
+  text-align: center; 
+  font-weight: bold;
+  border-radius: .7em; 
+  }
+
+  /* Navigation table style */
+
+  #navi_table{
+    width : 80%;
+    height: 30%;
+    margin : 20px 20px 20px 30px;
+    /*border: 1px solid black;*/
+    cellspacing : 2px;
+    cellpadding : 0px;
+  }
+
+  #navi_table tr{
+    background-color: #cccccc;
+  }
+
+
+  #navi_table tr td{
+    background-color: rgb(20,139,205);
+    text-align: center;
+  }
+
+  #navi_table tr td:hover{
+    background-color: #699CC3;
+    cursor: pointer;
+  }
+
+  #navi_table .bonus td{
+    background-color: rgb(107,40,115);
+
+  }
+
+  #navi_table .bonus td:hover{
+    background-color: #BA99BE;
+
+  }  
+
+/* Button styles */
+
+button{
+  float: right;
+  line-height: 1;
+  padding: 7px 10px;
+  font: 15px 'bariol_regular','trebuchet MS', 'lucida sans'; 
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  color: #000;
+  border-color: #383939;
+  background-color: #4E9CB5;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 10px;
+}
+
+  button:hover{ 
+  background: #F9F9F9; 
+  cursor: pointer;
+  }
+
+  /* Log out button*/
+
+#tabcont{
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+    margin: 14% 0px 0px 7%;
+    border: 1px solid rgba(1,1,1,0);
+}
+
+  
+
+  #testsubmit{
+    width: 120px;
+    height: 30px;
+  }
+
+  #bb{
+    width:120px;
+    height:30px; 
+  }
+
+  #logout{
+    width:100px;
+    height:30px;
+    margin: 10% 36.5% 0px 0px;
+  }
+
+
+  #status{
+    width: 290px;
+    height: 90px;
+    font-size: 13.5px;
+    margin: 6% 0px 0px 0px;
+    border: 1px solid rgba(1,1,1,0);
+  }
+
+  #cqc {
+    float:right;
+    background-color: #000;
+    color:white;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  #aqc{
+    float:right;
+    background-color: #36E855;
+    color:black;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  #disp_area .button{
+    width: 200px;
+    height: 30px;
+    margin: 12.5% 32% 0px 0px;
+  }
+
+  #login{
+    float: right;
+    line-height: 1;
+    padding: 7px 10px;
+    font: 15px 'bariol_regular','trebuchet MS', 'lucida sans'; 
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    color: #000;
+    border-color: #383939;
+    background-color: #4E9CB5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 10px;
+    width:100px;
+    height:30px;
+    margin: 6% 40% 0px 0px;
+  }
+
+  #login:hover{
+    background: #F9F9F9; 
+    cursor: pointer;
+  }
+
+  #slide_questions 
+  {
+    position:absolute;
+    left:0px;
+    width:16000px;
+    height:90%;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+    /*border: 1px solid rgba(1,1,1,1);*/
+  }
+  #q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10,#q11,#q12,#q13,#q14,#q15,#q16,#q17,#q18,#q19,#q20
+  {
+    padding:0;
+    margin:0px;
+    width:4.18%;
+    height:100%;
+    float:left;
+    border: 1px solid rgba(1,1,1,0);
+  }
+
+  .option1:hover,.option2:hover,.option3:hover,.option4:hover
+  {
+        color:#7FA3FF;
+        cursor: pointer;
+  }
+
+  .option2,.option3,.option4{
+    height: 10%;
+    width: 90%;
+    margin-left: 1.5%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    margin-top: 1.5%;
+    text-align: center;
+    color:#000000;
+    font-size: 13px;
+    border: 1px solid rgba(1,1,1,0); 
+  }
+
+  .option1{
+    height: 10%;
+    width: 90%;
+    margin-left: 1.5%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    margin-top:2.5%;
+    text-align: center;
+    color:#1F1919;
+    font-size: 13px;
+    border: 1px solid rgba(1,1,1,0);
+  }
+
+  #next{ 
+    width:100px;
+    height:30px;
+    margin: 8.5% 0px 0px 0px;
+  }
+
+  #prev{
+    width:100px;
+    height:30px;
+    margin: 8.5% 69% 0px 0px;
+  }
+
+  #login::-moz-focus-inner {
+  border: 0;
+}
+  button::-moz-focus-inner {
+  border: 0;
+}

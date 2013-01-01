@@ -1,0 +1,11 @@
+Algorithm for coding event :
+
+1. Start the server.
+2. User interface loads on every client machine
+3. On start test AJAX call to fetch questions and on server {create XML string}
+4. Client will receive Q , A , Op in order from server as xml file. [ <ip of server>:<server port>/<app name> ]
+5. { Parse XML } assign to array of Q , A , Op
+6. Randomize every set. [ easy(6) med(6) hard(3) ]
+7. Give questions
+8. On submit send AJAX call to submit score against team name.
+9. Display scores [ chart if possible ]

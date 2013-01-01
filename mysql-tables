@@ -1,0 +1,45 @@
+database :
+codecountytest
+
+table :
+scores
+
+create table prog_debug
+(
+	p1 varchar(10),
+	p2 varchar(10),
+	team_name varchar(30) PRIMARY KEY,
+	score int(11)
+);
+
+questions
+
+create table questions
+(
+	qid varchar(10) PRIMARY KEY,
+	question varchar(500),
+	op1 varchar(100),
+	op2 varchar(100),
+	op3 varchar(100),
+	op4 varchar(100),
+	ans char(1)
+);
+
+participants
+
+create table participants
+(
+	id varchar(10) PRIMARY KEY,
+	code_county char(1)
+);
+
+Participant details:
+
+create table pdetails
+(
+ 	id varchar(10) PRIMARY KEY,
+	name varchar(30),
+ 	mob varchar(30),
+	mail varchar(30)
+);
+

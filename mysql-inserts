@@ -1,0 +1,162 @@
+insert into questions values('q1',
+' 
+#include<stdio.h>
+main()
+{
+   int i;
+   printf("%d", &i)+1;
+   scanf("%d", i)-1;
+} 
+',
+' a. Run time error.',
+' b. Run time error. Access violation.',
+' c. Compile error. Illegal syntax',
+' d. None of the above',
+'4');
+
+insert into questions values('q2',
+'
+Output of the following code ?
+#include<stdio.h>
+int extern x;
+main()
+{
+ printf("%d",x);
+ x = 2;
+ getch();
+}
+int x = 23;
+',
+' a. Compiler error.',
+' b. 2',
+' c. 23',
+' d. None of these',
+'3');
+
+insert into questions values(
+'q3',
+'
+Output of the following code ?
+#include<stdio.h>
+main()
+{
+ int i = 0;
+ if (i == 0)
+ {
+  i = ((5*i,(i = 3)), i = 1);
+  printf("%d",i);
+ }
+ else
+  printf("equal");
+}
+',
+' a. 5',
+' b. 3',
+' c. 1',
+' d. equal',
+'3');
+
+insert into questions values('q4',
+'
+Output of the following code
+main()
+{
+ int i;
+ float a=5.2;
+ char *ptr;
+ ptr=(char*)&a;
+ for(i=0;i<=3;i++)
+  printf("%d",*ptr++);
+}
+',
+' a. 0 0 0 0',
+' b. garbage garbage garbage garbage',
+' c. 102 56 -80 32',
+' d. 102 102 -90 64',
+'4');
+
+insert into questions values('q5',
+'output of the following code
+main()
+{
+ char *str="c-pointer";
+ printf("%*.*s",10,7,str);
+}
+',
+' a. c-pointer',
+' b. c-point',
+' c. cpointer null null',
+' d. c-point null null',
+'2');
+
+insert into questions values('q6',
+'
+output of the following code
+#include<string.h>
+main()
+{
+ clrscr();
+ printf("%d%d",sizeof("string"),strlen("string"));
+ getch();
+}
+',
+' a. 7 6',
+' b. 7 7',
+' c. 6 6',
+' d. 6 7',
+'1');
+
+insert into questions values('q7',
+'
+Consider the following code:
+public class Tester
+{
+ public static void main(String[] args)
+ {
+  if ( false == true )
+  { // \u000a\u007d\u007b
+    System.out.println("false is true!");
+  }
+ }
+}
+What is the output for the above code? Assume the code to be syntactically correct?
+',
+' a. false is true!!',
+' b. No Output',
+' c. Error is thrown',
+' d. None of the above',
+'1');
+insert into questions values('q8',
+'
+public class tester
+{
+ public static void main(String[] args)
+ {
+  Integer i = 127;
+  Integer j = 127;
+  System.out.print(i == j);
+  System.out.print(i.equals(j));
+  Integer i1 = 128;
+  Integer j1 = 128;
+  System.out.print(i1 == j1);
+  System.out.print(i1.equals(j1));
+ }
+}
+',
+' a. true false true true',
+' b. false false false false',
+' c. true true true true',
+' d. true true false true',
+'4');
+
+
+Participants:
+
+insert into participants values('PR1000','0');
+insert into participants values('PR1111','0');
+insert into participants values('PR1123','0');
+insert into participants values('PR1223','0');
+
+
+
+
